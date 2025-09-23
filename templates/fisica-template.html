@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Física - Guia de Estudos Definitivo - RevisaPRO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>RevisaPRO 🚀</h1>
+            <nav>
+                <a href="index.html">Início</a> <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="conteudo-principal">
+            <h1>Guia de Estudos Interativo de Física</h1>
+            <p>Clique em um tópico para abrir sua caixinha de estudo completa.</p>
+            <a href="index.html" class="btn-voltar">‹ Voltar para todas as matérias</a>
+
+            <div class="prova-item-detalhado">
+
+                <!-- BLOCÃO 1: MECÂNICA -->
+                <h2 class="grande-area-titulo">Mecânica</h2>
+                <div class="sub-topicos-grid">
+                    <div class="sub-topico-card" data-topic="cinematica">
+                        <h4>Cinemática</h4>
+                        <ul>
+                           <li>MU e MUV</li>
+                           <li>Queda Livre e Lançamentos</li>
+                           <li>Vetores e Movimento Circular</li>
+                        </ul>
+                    </div>
+                    <div class="sub-topico-card" data-topic="dinamica">
+                        <h4>Dinâmica (Leis de Newton)</h4>
+                         <ul>
+                           <li>Leis de Newton</li>
+                           <li>Forças (Peso, Atrito, Elástica)</li>
+                           <li>Plano Inclinado</li>
+                        </ul>
+                    </div>
+                    <div class="sub-topico-card" data-topic="energia">
+                        <h4>Trabalho e Energia</h4>
+                         <ul>
+                           <li>Trabalho e Potência</li>
+                           <li>Energias Cinética e Potencial</li>
+                           <li>Conservação de Energia</li>
+                        </ul>
+                    </div>
+                    <div class="sub-topico-card" data-topic="impulso">
+                        <h4>Impulso e Colisões</h4>
+                         <ul>
+                           <li>Quantidade de Movimento</li>
+                           <li>Teorema do Impulso</li>
+                           <li>Colisões</li>
+                        </ul>
+                    </div>
+                    <div class="sub-topico-card" data-topic="gravitacao">
+                        <h4>Gravitação</h4>
+                         <ul>
+                           <li>Leis de Kepler</li>
+                           <li>Lei da Gravitação Universal</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CAIXINHA DE CONTEÚDO: CINEMÁTICA -->
+                <div id="cinematica-content" class="conteudo-detalhado" style="display: none;">
+                    <button class="btn-fechar">&times;</button>
+                    <h3>Caixinha de Estudo: Cinemática</h3>
+                    
+                    <div class="resumo-teorico">
+                        <h4>Explicação Teórica</h4>
+                        <p><b>Cinemática</b> é a parte da física que descreve o movimento sem se preocupar com suas causas. Ela foca no "como" o movimento acontece. Os conceitos chave são <b>posição</b> (onde o corpo está), <b>velocidade</b> (a rapidez com que a posição muda) e <b>aceleração</b> (a rapidez com que a velocidade muda).</p>
+                        <p>No <b>Movimento Uniforme (MU)</b>, a velocidade é constante. No <b>Movimento Uniformemente Variado (MUV)</b>, a aceleração é constante, o que significa que a velocidade muda a uma taxa constante.</p>
+                    </div>
+
+                    <div class="caixa-formula">
+                        <h4>Resumo Esquematizado</h4>
+                        <b>Movimento Uniforme (MU):</b> s = s₀ + v·t <br>
+                        <b>Movimento Uniformemente Variado (MUV):</b><br>
+                        v = v₀ + a·t <br>
+                        s = s₀ + v₀·t + ½·a·t² <br>
+                        v² = v₀² + 2·a·Δs  (Equação de Torricelli)
+                    </div>
+
+                    <div class="aplicacoes-cotidiano">
+                        <h4>💡 Para que serve?</h4>
+                        <p>Para calcular o tempo de uma viagem (GPS), projetar a segurança de veículos (distâncias de frenagem), analisar o desempenho em esportes (lançamento de um dardo) e até para prever a trajetória de corpos celestes.</p>
+                    </div>
+                    
+                    <div class="exercicios-propostos">
+                        <h4>Exemplos Resolvidos</h4>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 1</strong><span class="nivel-tag nivel-facil">FÁCIL</span></div>
+                            <p><b>Enunciado:</b> Um carro parte do repouso e acelera a 3 m/s². Qual sua velocidade após 4 segundos?</p>
+                            <p><b>Solução:</b> Usamos a função horária da velocidade (v = v₀ + a·t). Como parte do repouso, v₀ = 0. <br> v = 0 + 3 · 4  ➜ <b>v = 12 m/s</b>.</p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 2 (ENEM)</strong><span class="nivel-tag nivel-medio">MÉDIO</span></div>
+                            <p><b>Enunciado:</b> Um motorista, a 108 km/h, freia e para completamente em 6 segundos. Qual o módulo da sua aceleração média?</p>
+                             <ol class="passo-a-passo">
+                                <li><b>Converter Unidades:</b> Primeiro, converta 108 km/h para m/s dividindo por 3,6. ➜ v₀ = 30 m/s.</li>
+                                <li><b>Identificar Dados:</b> v₀ = 30 m/s, v_final = 0 m/s, Δt = 6 s.</li>
+                                <li><b>Calcular Aceleração:</b> Usando v = v₀ + a·t ➜ 0 = 30 + a·6 ➜ -30 = 6a ➜ a = -5 m/s².</li>
+                                <li><b>Módulo:</b> O módulo é o valor sem o sinal. ➜ <b>|a| = 5 m/s²</b>.</li>
+                            </ol>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 3</b><span class="nivel-tag nivel-dificil">DIFÍCIL</span></div>
+                            <p><b>Enunciado:</b> Um objeto é solto de uma ponte e leva 4 segundos para atingir a água. Desprezando a resistência do ar, qual a altura da ponte? (Use g = 10 m/s²)</p>
+                            <p><b>Solução:</b> Isso é uma queda livre (MUV). Usamos a função horária da posição (s = s₀ + v₀·t + ½·a·t²). <br> Adotando o topo como s₀ = 0, temos v₀ = 0 (foi solto) e a = g = 10 m/s². <br> A altura (H) será a distância 's' percorrida. <br> H = 0 + 0·4 + ½·10·4² ➜ H = 5 · 16 ➜ <b>H = 80 metros</b>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CAIXINHA DE CONTEÚDO: DINÂMICA -->
+                <div id="dinamica-content" class="conteudo-detalhado" style="display: none;">
+                    <button class="btn-fechar">&times;</button>
+                    <h3>Caixinha de Estudo: Dinâmica (Leis de Newton)</h3>
+                    
+                    <div class="resumo-teorico">
+                        <h4>Explicação Teórica</h4>
+                        <p><b>Dinâmica</b> estuda as causas do movimento, ou seja, as <b>forças</b>. As <b>Três Leis de Newton</b> são a base de toda a mecânica clássica:</p>
+                        <ul>
+                            <li><b>1ª Lei (Inércia):</b> Um corpo tende a permanecer em seu estado de movimento (repouso ou MU) a menos que uma força resultante não nula atue sobre ele.</li>
+                            <li><b>2ª Lei (Princípio Fundamental):</b> A força resultante sobre um corpo é igual ao produto de sua massa pela sua aceleração (F_res = m·a).</li>
+                            <li><b>3ª Lei (Ação e Reação):</b> Para toda ação, existe uma reação de mesmo módulo, mesma direção e sentido contrário, aplicada em corpos diferentes.</li>
+                        </ul>
+                    </div>
+
+                    <div class="caixa-formula">
+                        <h4>Resumo Esquematizado</h4>
+                        <b>2ª Lei de Newton:</b> F_resultante = m · a<br>
+                        <b>Força Peso:</b> P = m · g<br>
+                        <b>Força de Atrito Cinético:</b> Fat = μ_c · N<br>
+                        <b>Força Elástica (Lei de Hooke):</b> F_el = k · x
+                    </div>
+
+                     <div class="aplicacoes-cotidiano">
+                        <h4>💡 Para que serve?</h4>
+                        <p>Para projetar qualquer estrutura, de uma cadeira a um prédio (cálculo de forças), para entender a segurança automotiva (cintos de segurança e airbags funcionam baseados na inércia), e para lançar foguetes ao espaço (ação e reação).</p>
+                    </div>
+
+                    <div class="exercicios-propostos">
+                        <h4>Exemplos Resolvidos</h4>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 1</strong><span class="nivel-tag nivel-facil">FÁCIL</span></div>
+                            <p><b>Enunciado:</b> Qual a força resultante necessária para acelerar um bloco de 5 kg a 2 m/s²?</p>
+                            <p><b>Solução:</b> Pela 2ª Lei de Newton (F_res = m·a). <br> F_res = 5 kg · 2 m/s² ➜ <b>F_res = 10 N</b>.</p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 2</b><span class="nivel-tag nivel-medio">MÉDIO</span></div>
+                            <p><b>Enunciado:</b> Um elevador de 800 kg sobe com aceleração de 1 m/s². Qual a força de tração no cabo? (Use g = 10 m/s²)</p>
+                            <ol class="passo-a-passo">
+                                <li><b>Diagrama de Forças:</b> Duas forças atuam no elevador: a Tração (T) para cima e o Peso (P) para baixo.</li>
+                                <li><b>Peso do Elevador:</b> P = m·g = 800 · 10 = 8000 N.</li>
+                                <li><b>2ª Lei de Newton:</b> A força resultante é na direção do movimento (para cima). F_res = T - P.</li>
+                                <li><b>Cálculo:</b> F_res = m·a ➜ T - P = m·a ➜ T - 8000 = 800 · 1 ➜ T = 800 + 8000 ➜ <b>T = 8800 N</b>.</li>
+                            </ol>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 3 (FUVEST)</strong><span class="nivel-tag nivel-dificil">DIFÍCIL</span></div>
+                            <p><b>Enunciado:</b> Um bloco de 10 kg está em um plano inclinado de 30° com a horizontal. O coeficiente de atrito cinético é 0,2. Uma força de 90 N é aplicada paralelamente ao plano, para cima. Qual a aceleração do bloco? (Dados: g = 10 m/s², sen(30°)=0,5, cos(30°)≈0,87)</p>
+                            <ol class="passo-a-passo">
+                                <li><b>Decompor o Peso:</b> Px = P·sen(30°) = (10·10)·0,5 = 50 N (puxa para baixo). Py = P·cos(30°) = 100·0,87 = 87 N (comprime o plano).</li>
+                                <li><b>Força Normal:</b> No plano inclinado, N = Py = 87 N.</li>
+                                <li><b>Força de Atrito:</b> O bloco sobe, então o atrito é para baixo. Fat = μ·N = 0,2 · 87 = 17,4 N.</li>
+                                <li><b>Força Resultante:</b> Forças para cima menos forças para baixo. F_res = F_aplicada - Px - Fat.</li>
+                                <li><b>2ª Lei de Newton:</b> m·a = 90 - 50 - 17,4 ➜ 10·a = 22,6 ➜ <b>a = 2,26 m/s²</b>.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTEÚDO ORIGINAL DE ENERGIA -->
+                <div id="energia-content" class="conteudo-detalhado" style="display: none;">
+                    <button class="btn-fechar">&times;</button>
+                    <h3>Caixinha de Estudo: Trabalho e Energia</h3>
+                    <div class="resumo-teorico">
+                        <h4>Explicação Teórica</h4>
+                        <p><b>Trabalho (τ)</b> é a energia transferida pela aplicação de uma força ao longo de um
+                            deslocamento. Só há trabalho se houver deslocamento na direção da força. <b>Energia</b> é a
+                            capacidade de realizar trabalho. A <b>Energia Cinética (Ec)</b> é a do movimento, e a
+                            <b>Energia Potencial (Ep)</b> é a armazenada (gravitacional pela altura, elástica pela
+                            deformação). O <b>Teorema da Energia Cinética</b> diz que o trabalho total sobre um corpo é
+                            igual à variação de sua energia cinética. Em sistemas conservativos (sem atrito), a
+                            <b>Energia Mecânica Total (Em = Ec + Ep)</b> se conserva.</p>
+                    </div>
+                    <div class="aplicacoes-cotidiano">
+                        <h4>💡 Para que serve?</h4>
+                        <p>Para projetar montanhas-russas, calcular a eficiência de motores, entender como usinas
+                            hidrelétricas geram eletricidade (transformando energia potencial da água em cinética e
+                            depois em elétrica) e analisar o desempenho de atletas.</p>
+                    </div>
+                    <div class="exemplo-resolvido">
+                        <h4>Exemplo Resolvido</h4>
+                        <div class="exemplo-pratico">
+                            <p><strong>Problema (ENEM):</strong> Um skatista de 60 kg parte do repouso do topo de uma
+                                rampa de 5 m de altura. Qual sua velocidade ao chegar na base, supondo que não há
+                                atrito? (g=10 m/s²)</p>
+                            <ol class="passo-a-passo">
+                                <li><strong>Princípio:</strong> Sistema conservativo. A Energia Mecânica no topo é igual
+                                    à da base (Em_A = Em_B).</li>
+                                <li><strong>No Topo (A):</strong> Apenas Energia Potencial. Em_A = Epg = m.g.h = 60 * 10
+                                    * 5 = 3000 J.</li>
+                                <li><strong>Na Base (B):</strong> Apenas Energia Cinética. Em_B = Ec = ½.m.v².</li>
+                                <li><strong>Conservação:</strong> 3000 = ½ * 60 * v² => 3000 = 30v² => v² = 100 => v =
+                                    10 m/s.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- NOVO CONTEÚDO: IMPULSO E COLISÕES -->
+                <div id="impulso-content" class="conteudo-detalhado" style="display: none;">
+                    <button class="btn-fechar">&times;</button>
+                    <h3>Caixinha de Estudo: Impulso e Colisões</h3>
+                    <div class="resumo-teorico">
+                        <h4>Explicação Teórica</h4>
+                        <p><b>Quantidade de Movimento (Q)</b>, ou momento linear, é uma grandeza vetorial que mede a "inércia de movimento" de um corpo (Q = m·v). Quanto maior a massa ou a velocidade, mais difícil é parar o objeto.</p>
+                        <p><b>Impulso (I)</b> é o efeito de uma força agindo durante um intervalo de tempo (I = F·Δt). É o "empurrão" que muda a quantidade de movimento.</p>
+                        <p>O <b>Teorema do Impulso</b> afirma que o impulso da força resultante é igual à variação da quantidade de movimento (I = ΔQ).</p>
+                        <p>Em um sistema isolado (sem forças externas), a quantidade de movimento total se conserva. Isso é fundamental para analisar <b>Colisões</b>.</p>
+                    </div>
+                    <div class="caixa-formula">
+                        <h4>Resumo Esquematizado</h4>
+                        <b>Quantidade de Movimento:</b> Q = m · v<br>
+                        <b>Impulso:</b> I = F_res · Δt<br>
+                        <b>Teorema do Impulso:</b> I = ΔQ = Q_final - Q_inicial<br>
+                        <b>Conservação em Colisões:</b> ΣQ_antes = ΣQ_depois
+                    </div>
+                    <div class="aplicacoes-cotidiano">
+                        <h4>💡 Para que serve?</h4>
+                        <p>Para entender o funcionamento de airbags (aumentam o tempo da colisão, diminuindo a força), o recuo de uma arma, a propulsão de foguetes (ação e reação) e a dinâmica de um jogo de bilhar.</p>
+                    </div>
+                    <div class="exercicios-propostos">
+                        <h4>Exemplos Resolvidos</h4>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 1</strong><span class="nivel-tag nivel-facil">FÁCIL</span></div>
+                            <p><b>Enunciado:</b> Calcule a quantidade de movimento de um caminhão de 4000 kg a 72 km/h.</p>
+                            <p><b>Solução:</b> Primeiro, converta a velocidade para m/s: 72 km/h ÷ 3,6 = 20 m/s. <br> Agora, use Q = m·v ➜ Q = 4000 · 20 ➜ <b>Q = 80.000 kg·m/s</b>.</p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 2</strong><span class="nivel-tag nivel-medio">MÉDIO</span></div>
+                            <p><b>Enunciado:</b> Uma bola de tênis de 0,1 kg atinge uma parede com velocidade de 20 m/s e retorna na mesma direção com velocidade de 15 m/s. Qual o impulso recebido pela bola?</p>
+                            <ol class="passo-a-passo">
+                                <li><b>Adote um Referencial:</b> Vamos considerar a velocidade inicial positiva (+20 m/s) e a final negativa (-15 m/s), pois o sentido mudou.</li>
+                                <li><b>Calcule Q inicial e Q final:</b> Q_inicial = 0,1 · 20 = 2 kg·m/s. Q_final = 0,1 · (-15) = -1,5 kg·m/s.</li>
+                                <li><b>Use o Teorema do Impulso:</b> I = ΔQ = Q_final - Q_inicial ➜ I = -1,5 - 2 ➜ <b>I = -3,5 N·s</b>. O sinal negativo indica que o impulso foi no sentido contrário ao movimento inicial.</li>
+                            </ol>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 3</b><span class="nivel-tag nivel-dificil">DIFÍCIL</span></div>
+                            <p><b>Enunciado:</b> Um canhão de 500 kg dispara uma bala de 5 kg com velocidade horizontal de 200 m/s. Qual a velocidade de recuo do canhão?</p>
+                             <ol class="passo-a-passo">
+                                <li><b>Princípio:</b> O sistema (canhão + bala) está inicialmente em repouso, então a quantidade de movimento total é zero. Pela conservação, ela deve continuar zero após o disparo.</li>
+                                <li><b>Conservação de Q:</b> Q_total_antes = Q_total_depois ➜ 0 = Q_canhão + Q_bala.</li>
+                                <li><b>Cálculo:</b> 0 = (m_c · v_c) + (m_b · v_b) ➜ 0 = (500 · v_c) + (5 · 200).</li>
+                                <li><b>Isolar v_c:</b> 500 · v_c = -1000 ➜ v_c = -1000 / 500 ➜ <b>v_c = -2 m/s</b>. O sinal negativo indica que a velocidade do canhão é no sentido oposto ao da bala.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NOVO CONTEÚDO: GRAVITAÇÃO -->
+                <div id="gravitacao-content" class="conteudo-detalhado" style="display: none;">
+                    <button class="btn-fechar">&times;</button>
+                    <h3>Caixinha de Estudo: Gravitação</h3>
+                    <div class="resumo-teorico">
+                        <h4>Explicação Teórica</h4>
+                        <p>Este tópico estuda a atração entre corpos com massa. As <b>Leis de Kepler</b> descrevem como os planetas se movem:</p>
+                        <ul>
+                           <li><b>1ª Lei (Lei das Órbitas):</b> As órbitas dos planetas são elipses, com o Sol em um dos focos.</li>
+                           <li><b>2ª Lei (Lei das Áreas):</b> A linha que liga um planeta ao Sol varre áreas iguais em intervalos de tempo iguais. (Isso implica que os planetas se movem mais rápido quando estão mais perto do Sol).</li>
+                           <li><b>3ª Lei (Lei dos Períodos):</b> A razão entre o quadrado do período de translação (T²) e o cubo do raio médio da órbita (R³) é constante para todos os planetas do sistema solar.</li>
+                        </ul>
+                        <p>A <b>Lei da Gravitação Universal de Newton</b> quantifica a força dessa atração entre duas massas M e m, separadas por uma distância d.</p>
+                    </div>
+                    <div class="caixa-formula">
+                        <h4>Resumo Esquematizado</h4>
+                        <b>3ª Lei de Kepler:</b> T² / R³ = k (constante)<br>
+                        <b>Lei da Gravitação Universal:</b> F_g = G · (M·m) / d²<br>
+                        (Onde G ≈ 6,67 × 10⁻¹¹ N·m²/kg²)
+                    </div>
+                     <div class="aplicacoes-cotidiano">
+                        <h4>💡 Para que serve?</h4>
+                        <p>Para colocar satélites artificiais em órbita (GPS, comunicação), planejar missões espaciais, entender o fenômeno das marés (causadas pela atração da Lua e do Sol) e calcular a massa de planetas e estrelas.</p>
+                    </div>
+                    <div class="exercicios-propostos">
+                        <h4>Exemplos Resolvidos</h4>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 1</strong><span class="nivel-tag nivel-facil">FÁCIL</span></div>
+                            <p><b>Enunciado:</b> Se a distância entre a Terra e o Sol dobrasse, o que aconteceria com a força gravitacional entre eles?</p>
+                            <p><b>Solução:</b> A força é inversamente proporcional ao QUADRADO da distância (F ∝ 1/d²). Se a distância (d) vira (2d), a nova força será F' ∝ 1/(2d)² = 1/(4d²). Portanto, <b>a força se tornaria 4 vezes menor</b>.</p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 2</b><span class="nivel-tag nivel-medio">MÉDIO</span></div>
+                            <p><b>Enunciado:</b> Um planeta X tem um período de translação 8 vezes maior que o da Terra. Qual a razão entre o raio médio da órbita de X (R_x) e o da Terra (R_t)?</p>
+                            <ol class="passo-a-passo">
+                                <li><b>Use a 3ª Lei de Kepler:</b> T_x² / R_x³ = T_t² / R_t³.</li>
+                                <li><b>Isole a razão dos raios:</b> R_x³ / R_t³ = T_x² / T_t² ➜ (R_x / R_t)³ = (T_x / T_t)².</li>
+                                <li><b>Substitua os valores:</b> Sabemos que T_x = 8·T_t, então (T_x / T_t) = 8.</li>
+                                <li><b>Cálculo:</b> (R_x / R_t)³ = 8² = 64. Para achar a razão, tiramos a raiz cúbica: R_x / R_t = ³√64 ➜ <b>R_x / R_t = 4</b>. O raio da órbita de X é 4 vezes maior.</li>
+                            </ol>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 3</b><span class="nivel-tag nivel-dificil">DIFÍCIL</span></div>
+                            <p><b>Enunciado:</b> Deduza uma expressão para a velocidade orbital (v) de um satélite de massa 'm' que orbita um planeta de massa 'M' a um raio 'R'.</p>
+                             <ol class="passo-a-passo">
+                                <li><b>Princípio:</b> Para o satélite se manter em órbita circular, a força gravitacional (F_g) deve atuar como a força centrípeta (F_c) necessária.</li>
+                                <li><b>Iguale as Forças:</b> F_g = F_c.</li>
+                                <li><b>Substitua as Fórmulas:</b> G·(M·m)/R² = m·v²/R.</li>
+                                <li><b>Simplifique a Expressão:</b> A massa do satélite 'm' e um dos 'R' se cancelam dos dois lados. ➜ G·M/R = v².</li>
+                                <li><b>Isole a Velocidade:</b> <b>v = √(G·M / R)</b>. Note que a velocidade orbital não depende da massa do satélite, apenas da massa do planeta e do raio da órbita.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOCO 2: TERMOLOGIA E TERMODINÂMICA -->
+                <h2 class="grande-area-titulo">Termologia e Termodinâmica</h2>
+                <div class="sub-topicos-grid">
+                    <div class="sub-topico-card" data-topic="termometria">
+                        <h4>Termometria</h4>
+                        <ul>
+                            <li>Escalas e Conversão</li>
+                            <li>Dilatação Térmica</li>
+                        </ul>
+                    </div>
+                    <div class="sub-topico-card" data-topic="calorimetria">
+                        <h4>Calorimetria</h4>
+                        <ul>
+                            <li>Calor Sensível e Latente</li>
+                            <li>Trocas de Calor</li>
+                        </ul>
+                    </div>
+                    <div class="sub-topico-card" data-topic="gases">
+                        <h4>Gases Perfeitos</h4>
+                        <ul>
+                            <li>Equação de Clapeyron</li>
+                            <li>Transformações Gasosas</li>
+                        </ul>
+                    </div>
+                    <div class="sub-topico-card" data-topic="termodinamica">
+                        <h4>Termodinâmica</h4>
+                        <ul>
+                            <li>1ª e 2ª Leis</li>
+                            <li>Máquinas Térmicas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CAIXINHA DE CONTEÚDO: TERMOMETRIA -->
+                <div id="termometria-content" class="conteudo-detalhado" style="display: none;">
+                    <button class="btn-fechar">&times;</button>
+                    <h3>Caixinha de Estudo: Termometria</h3>
+                    
+                    <div class="resumo-teorico">
+                        <h4>Explicação Teórica</h4>
+                        <p><b>Termometria</b> é a parte da física que estuda a temperatura. <b>Temperatura</b> é uma medida do grau de agitação das partículas de um corpo. As escalas mais comuns são <b>Celsius (°C)</b>, <b>Fahrenheit (°F)</b> e <b>Kelvin (K)</b>. Kelvin é a escala absoluta, onde 0 K é o zero absoluto.</p>
+                        <p><b>Dilatação Térmica</b> é o fenômeno no qual as dimensões de um corpo aumentam devido ao aumento de sua temperatura.</p>
+                    </div>
+
+                    <div class="caixa-formula">
+                        <h4>Resumo Esquematizado</h4>
+                        <b>Conversão de Escalas:</b> T<sub>C</sub>/5 = (T<sub>F</sub> - 32)/9<br>
+                        <b>Conversão para Kelvin:</b> T<sub>K</sub> = T<sub>C</sub> + 273<br>
+                        <b>Dilatação Linear:</b> &Delta;L = L<sub>0</sub> &middot; &alpha; &middot; &Delta;T
+                    </div>
+
+                     <div class="aplicacoes-cotidiano">
+                        <h4>💡 Para que serve?</h4>
+                        <p>Para medir a febre, controlar a temperatura de alimentos e projetar estruturas como pontes e trilhos de trem, que precisam de espaços (juntas de dilatação) para expandir no calor.</p>
+                    </div>
+
+                    <div class="exercicios-propostos">
+                        <h4>Exemplos Resolvidos</h4>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 1</strong><span class="nivel-tag nivel-facil">FÁCIL</span></div>
+                            <p><b>Enunciado:</b> Converta 30°C para Fahrenheit.</p>
+                            <p><b>Solução:</b> T<sub>C</sub>/5 = (T<sub>F</sub> - 32)/9 ➜ 30/5 = (T<sub>F</sub> - 32)/9 ➜ 6 = (T<sub>F</sub> - 32)/9 ➜ 54 = T<sub>F</sub> - 32 ➜ <b>T<sub>F</sub> = 86 °F</b>.</p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 2 (ENEM)</strong><span class="nivel-tag nivel-medio">MÉDIO</span></div>
+                            <p><b>Enunciado:</b> Uma escala X adota -20°X para fusão e 130°X para ebulição da água. Qual a equação de conversão entre X e Celsius?</p>
+                            <p><b>Solução:</b> (T<sub>C</sub> - 0)/(100 - 0) = (T<sub>X</sub> - (-20))/(130 - (-20)) ➜ T<sub>C</sub>/100 = (T<sub>X</sub> + 20)/150 ➜ <b>T<sub>C</sub>/2 = (T<sub>X</sub> + 20)/3</b>.</p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 3 (FUVEST)</strong><span class="nivel-tag nivel-dificil">DIFÍCIL</span></div>
+                            <p><b>Enunciado:</b> Uma barra de ferro de 2m a 20°C é aquecida a 220°C. Qual seu novo comprimento? (&alpha; = 1,2×10⁻⁵ °C⁻¹)</p>
+                            <p><b>Solução:</b> &Delta;L = L<sub>0</sub>&alpha;&Delta;T = 2 &middot; (1,2×10⁻⁵) &middot; 200 = 0,0048 m. L = L<sub>0</sub> + &Delta;L = 2 + 0,0048 ➜ <b>L = 2,0048 m</b>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CAIXINHA DE CONTEÚDO: CALORIMETRIA -->
+                <div id="calorimetria-content" class="conteudo-detalhado" style="display: none;">
+                    <button class="btn-fechar">&times;</button>
+                    <h3>Caixinha de Estudo: Calorimetria</h3>
+                    
+                    <div class="resumo-teorico">
+                        <h4>Explicação Teórica</h4>
+                        <p><b>Calorimetria</b> estuda as trocas de calor. <b>Calor Sensível</b> provoca variação de temperatura, enquanto <b>Calor Latente</b> provoca mudança de estado físico. O <b>Princípio das Trocas de Calor</b> diz que, em um sistema isolado, a soma do calor recebido e cedido é zero (ΣQ = 0).</p>
+                    </div>
+
+                    <div class="caixa-formula">
+                        <h4>Resumo Esquematizado</h4>
+                        <b>Calor Sensível:</b> Q = m &middot; c &middot; &Delta;T <br>
+                        <b>Calor Latente:</b> Q = m &middot; L <br>
+                        <b>Trocas de Calor:</b> &Sigma;Q = 0
+                    </div>
+
+                     <div class="aplicacoes-cotidiano">
+                        <h4>💡 Para que serve?</h4>
+                        <p>Para entender o funcionamento de geladeiras, o motivo pelo qual a areia da praia esquenta mais rápido que a água, e para projetar sistemas de aquecimento.</p>
+                    </div>
+
+                    <div class="exercicios-propostos">
+                        <h4>Exemplos Resolvidos</h4>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 1</strong><span class="nivel-tag nivel-facil">FÁCIL</span></div>
+                            <p><b>Enunciado:</b> Qual o calor para aquecer 500g de água de 20°C para 80°C? (c<sub>água</sub> = 1 cal/g°C).</p>
+                            <p><b>Solução:</b> Q = m &middot; c &middot; &Delta;T = 500 &middot; 1 &middot; (80 - 20) ➜ <b>Q = 30.000 cal</b>.</p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 2 (ENEM)</strong><span class="nivel-tag nivel-medio">MÉDIO</span></div>
+                            <p><b>Enunciado:</b> Mistura-se 200g de água a 80°C com 300g de água a 10°C. Qual a temperatura de equilíbrio (T<sub>E</sub>)?</p>
+                            <p><b>Solução:</b> Q<sub>cedido</sub> + Q<sub>recebido</sub> = 0 ➜ 200(T<sub>E</sub> - 80) + 300(T<sub>E</sub> - 10) = 0 ➜ 2T<sub>E</sub> - 160 + 3T<sub>E</sub> - 30 = 0 ➜ 5T<sub>E</sub> = 190 ➜ <b>T<sub>E</sub> = 38°C</b>.</p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 3</b><span class="nivel-tag nivel-dificil">DIFÍCIL</span></div>
+                            <p><b>Enunciado:</b> Qual o calor total para transformar 50g de gelo a -10°C em vapor a 100°C? (Dados: c<sub>gelo</sub>=0,5; c<sub>água</sub>=1; L<sub>f</sub>=80; L<sub>v</sub>=540).</p>
+                             <ol class="passo-a-passo">
+                                <li><b>Aquecer gelo:</b> Q₁ = 50 &middot; 0,5 &middot; 10 = 250 cal.</li>
+                                <li><b>Derreter gelo:</b> Q₂ = 50 &middot; 80 = 4.000 cal.</li>
+                                <li><b>Aquecer água:</b> Q₃ = 50 &middot; 1 &middot; 100 = 5.000 cal.</li>
+                                <li><b>Vaporizar água:</b> Q₄ = 50 &middot; 540 = 27.000 cal.</li>
+                                <li><b>Soma Total:</b> <b>Q<sub>total</sub> = 36.250 cal</b>.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CAIXINHA DE CONTEÚDO: GASES PERFEITOS -->
+                <div id="gases-content" class="conteudo-detalhado" style="display: none;">
+                    <button class="btn-fechar">&times;</button>
+                    <h3>Caixinha de Estudo: Gases Perfeitos</h3>
+                    
+                    <div class="resumo-teorico">
+                        <h4>Explicação Teórica</h4>
+                        <p>Um <b>gás perfeito</b> é um modelo teórico onde as moléculas não têm volume e não interagem entre si. Seu estado é definido pela <b>Pressão (P)</b>, <b>Volume (V)</b> e <b>Temperatura (T)</b>, que deve estar sempre em <b>Kelvin (K)</b>.</p>
+                        <p>As <b>transformações gasosas</b> ocorrem quando uma dessas variáveis muda, podendo ser isotérmica (T constante), isobárica (P constante) ou isocórica (V constante).</p>
+                    </div>
+
+                    <div class="caixa-formula">
+                        <h4>Resumo Esquematizado</h4>
+                        <b>Equação de Clapeyron:</b> P &middot; V = n &middot; R &middot; T <br>
+                        <b>Lei Geral dos Gases:</b> (P₁ &middot; V₁)/T₁ = (P₂ &middot; V₂)/T₂
+                    </div>
+
+                     <div class="aplicacoes-cotidiano">
+                        <h4>💡 Para que serve?</h4>
+                        <p>Para entender por que a pressão do pneu do carro aumenta em dias quentes, o funcionamento de um motor a combustão, de sprays aerossóis e os riscos envolvidos no mergulho de profundidade.</p>
+                    </div>
+
+                    <div class="exercicios-propostos">
+                        <h4>Exemplos Resolvidos</h4>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 1</strong><span class="nivel-tag nivel-facil">FÁCIL</span></div>
+                            <p><b>Enunciado:</b> Um gás ocupa 41 L sob pressão de 2 atm a 127°C. Qual o número de mols? (R = 0,082 atm·L/mol·K).</p>
+                            <p><b>Solução:</b> Primeiro, T = 127 + 273 = 400 K. Usando PV=nRT ➜ 2 &middot; 41 = n &middot; 0,082 &middot; 400 ➜ 82 = n &middot; 32,8 ➜ <b>n = 2,5 mols</b>.</p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 2</b><span class="nivel-tag nivel-medio">MÉDIO</span></div>
+                            <p><b>Enunciado:</b> Um gás a 27°C tem seu volume dobrado sob pressão constante. Qual a nova temperatura em °C?</p>
+                            <p><b>Solução:</b> Transformação isobárica. T₁ = 27 + 273 = 300 K. V₁/T₁ = V₂/T₂ ➜ V/300 = 2V/T₂ ➜ T₂ = 600 K. Em Celsius: T = 600 - 273 = <b>327°C</b>.</p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 3 (UFRJ)</strong><span class="nivel-tag nivel-dificil">DIFÍCIL</span></div>
+                            <p><b>Enunciado:</b> Um gás vai do estado A (P=2&times;10⁵ Pa, V=1 m³) para o B (P=4&times;10⁵ Pa, V=3 m³). Se a T<sub>A</sub> = 200 K, qual a T<sub>B</sub>?</p>
+                            <p><b>Solução:</b> (P<sub>A</sub>V<sub>A</sub>)/T<sub>A</sub> = (P<sub>B</sub>V<sub>B</sub>)/T<sub>B</sub> ➜ (2&times;10⁵ &middot; 1)/200 = (4&times;10⁵ &middot; 3)/T<sub>B</sub> ➜ 2/200 = 12/T<sub>B</sub> ➜ 1/100 = 12/T<sub>B</sub> ➜ <b>T<sub>B</sub> = 1200 K</b>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CAIXINHA DE CONTEÚDO: TERMODINÂMICA -->
+                <div id="termodinamica-content" class="conteudo-detalhado" style="display: none;">
+                    <button class="btn-fechar">&times;</button>
+                    <h3>Caixinha de Estudo: Termodinâmica</h3>
+                    
+                    <div class="resumo-teorico">
+                        <h4>Explicação Teórica</h4>
+                        <p>A <b>Termodinâmica</b> estuda as relações entre calor, trabalho e energia.</p>
+                        <ul>
+                            <li><b>1ª Lei:</b> É a conservação de energia. A variação da energia interna (&Delta;U) de um gás é a diferença entre o calor trocado (Q) e o trabalho realizado (W). A energia interna depende da temperatura. O trabalho depende da variação de volume.</li>
+                            <li><b>2ª Lei:</b> Define o sentido dos processos térmicos. O calor não flui espontaneamente do frio para o quente. Estabelece que nenhuma máquina térmica tem rendimento de 100%.</li>
+                        </ul>
+                    </div>
+
+                    <div class="caixa-formula">
+                        <h4>Resumo Esquematizado</h4>
+                        <b>1ª Lei da Termodinâmica:</b> &Delta;U = Q - W <br>
+                        <b>Trabalho (isobárico):</b> W = P &middot; &Delta;V <br>
+                        <b>Rendimento (Máquina Térmica):</b> &eta; = W/Q<sub>quente</sub> = 1 - |Q<sub>fria</sub>|/Q<sub>quente</sub>
+                    </div>
+
+                     <div class="aplicacoes-cotidiano">
+                        <h4>💡 Para que serve?</h4>
+                        <p>É a base para o funcionamento de motores de carros, geladeiras, ar condicionados e usinas de energia. Ela explica por que precisamos abastecer os carros e por que a conta de luz aumenta quando usamos o ar condicionado.</p>
+                    </div>
+
+                    <div class="exercicios-propostos">
+                        <h4>Exemplos Resolvidos</h4>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 1</strong><span class="nivel-tag nivel-facil">FÁCIL</span></div>
+                            <p><b>Enunciado:</b> Um gás recebe 800 J de calor e realiza 500 J de trabalho. Qual a variação da sua energia interna?</p>
+                            <p><b>Solução:</b> &Delta;U = Q - W = 800 - 500 ➜ <b>&Delta;U = 300 J</b>. (A temperatura aumentou).</p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 2</b><span class="nivel-tag nivel-medio">MÉDIO</span></div>
+                            <p><b>Enunciado:</b> Sob pressão constante de 2&times;10⁵ Pa, o volume de um gás aumenta de 0,01 para 0,03 m³. Ele recebe 7000 J de calor. Qual a &Delta;U?</p>
+                            <p><b>Solução:</b> Primeiro, calcule o trabalho: W = P&Delta;V = (2&times;10⁵)(0,03 - 0,01) = 4000 J. Agora, use a 1ª Lei: &Delta;U = Q - W = 7000 - 4000 ➜ <b>&Delta;U = 3000 J</b>.</p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 3 (ENEM)</strong><span class="nivel-tag nivel-dificil">DIFÍCIL</span></div>
+                            <p><b>Enunciado:</b> Uma máquina térmica opera entre 527°C e 27°C, recebendo 2000 J da fonte quente. Qual o trabalho máximo que ela pode realizar?</p>
+                             <ol class="passo-a-passo">
+                                <li><b>Converter Temperaturas para Kelvin:</b> T<sub>Q</sub> = 527+273 = 800 K. T<sub>F</sub> = 27+273 = 300 K.</li>
+                                <li><b>Calcular Rendimento Máximo (Carnot):</b> &eta; = 1 - T<sub>F</sub>/T<sub>Q</sub> = 1 - 300/800 = 1 - 3/8 = 5/8 = 0,625.</li>
+                                <li><b>Calcular o Trabalho:</b> &eta; = W/Q<sub>quente</sub> ➜ 0,625 = W/2000 ➜ <b>W = 1250 J</b>.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOCÃO 3: ONDULATÓRIA E ACÚSTICA (NOVA ESTRUTURA) -->
+                <h2 class="grande-area-titulo">Ondulatória e Acústica</h2>
+                <div class="sub-topicos-grid">
+                   <div class="sub-topico-card" data-topic="ondulatoria-fundamentos">
+                       <h4>Fundamentos da Ondulatória</h4>
+                       <ul>
+                           <li>Classificação de Ondas</li>
+                           <li>Velocidade, Frequência, Período</li>
+                           <li>Equação Fundamental (v = λf)</li>
+                       </ul>
+                   </div>
+                   <div class="sub-topico-card" data-topic="ondulatoria-fenomenos">
+                       <h4>Fenômenos Ondulatórios</h4>
+                       <ul>
+                           <li>Reflexão e Refração</li>
+                           <li>Difração e Interferência</li>
+                           <li>Polarização e Ressonância</li>
+                       </ul>
+                   </div>
+                   <div class="sub-topico-card" data-topic="acustica">
+                       <h4>Acústica</h4>
+                       <ul>
+                           <li>Qualidades Fisiológicas do Som</li>
+                           <li>Intensidade Sonora (dB)</li>
+                           <li>Efeito Doppler</li>
+                       </ul>
+                   </div>
+                </div>
+                
+                <!-- CAIXINHA DE CONTEÚDO: FUNDAMENTOS DA ONDULATÓRIA -->
+                <div id="ondulatoria-fundamentos-content" class="conteudo-detalhado" style="display: none;">
+                    <button class="btn-fechar">&times;</button>
+                    <h3>Caixinha de Estudo: Fundamentos da Ondulatória</h3>
+                    
+                    <div class="resumo-teorico">
+                        <h4>Explicação Teórica</h4>
+                        <p>Uma <b>onda</b> é uma perturbação que se propaga em um meio, transportando <b>energia</b> sem transportar <b>matéria</b>. Elas podem ser classificadas quanto à <b>natureza</b> (mecânicas ou eletromagnéticas) e quanto à <b>direção de vibração</b> (transversais ou longitudinais).</p>
+                        <ul>
+                            <li><b>Mecânicas:</b> Precisam de um meio para se propagar (ex: som).</li>
+                            <li><b>Eletromagnéticas:</b> Podem se propagar no vácuo (ex: luz, rádio, Wi-Fi).</li>
+                            <li><b>Transversais:</b> Vibração perpendicular à propagação (ex: onda numa corda).</li>
+                            <li><b>Longitudinais:</b> Vibração na mesma direção da propagação (ex: som).</li>
+                        </ul>
+                        <p>Os elementos chave de uma onda são a <b>Amplitude (A)</b>, o <b>Comprimento de Onda (λ)</b>, o <b>Período (T)</b> e a <b>Frequência (f)</b>.</p>
+                    </div>
+
+                    <div class="caixa-formula">
+                        <h4>Resumo Esquematizado</h4>
+                        <b>Relação Frequência-Período:</b> f = 1 / T <br>
+                        <b>Equação Fundamental da Ondulatória:</b> v = λ &middot; f
+                    </div>
+
+                     <div class="aplicacoes-cotidiano">
+                        <h4>💡 Para que serve?</h4>
+                        <p>Para todas as nossas comunicações sem fio (rádio, celular, Wi-Fi), para exames médicos como o ultrassom, para o funcionamento de fornos de micro-ondas e para a produção de música em instrumentos.</p>
+                    </div>
+
+                    <div class="exercicios-propostos">
+                        <h4>Exemplos Resolvidos</h4>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 1</strong><span class="nivel-tag nivel-facil">FÁCIL</span></div>
+                            <p><b>Enunciado:</b> Uma estação de rádio FM transmite em 100 MHz. Sabendo que v ≈ 3 x 10⁸ m/s, qual o comprimento de onda?</p>
+                            <p><b>Solução:</b>
+                                <ol class="passo-a-passo">
+                                    <li><b>Dados:</b> f = 100 MHz = 10⁸ Hz; v = 3 x 10⁸ m/s.</li>
+                                    <li><b>Fórmula:</b> v = λ &middot; f  ➜  λ = v / f.</li>
+                                    <li><b>Cálculo:</b> λ = (3 x 10⁸) / (10⁸) ➜ <b>λ = 3 metros</b>.</li>
+                                </ol>
+                            </p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 2 (ENEM)</strong><span class="nivel-tag nivel-medio">MÉDIO</span></div>
+                            <p><b>Enunciado:</b> Uma pessoa produz ondas em uma corda, movendo a mão para cima e para baixo 2 vezes por segundo. A distância entre duas cristas consecutivas é de 1,5 metros. Qual a velocidade da onda?</p>
+                            <p><b>Solução:</b>
+                                <ol class="passo-a-passo">
+                                    <li><b>Interpretação:</b> "2 vezes por segundo" é a frequência (f = 2 Hz). "Distância entre cristas" é o comprimento de onda (λ = 1,5 m).</li>
+                                    <li><b>Fórmula:</b> v = λ &middot; f.</li>
+                                    <li><b>Cálculo:</b> v = 1,5 &middot; 2 ➜ <b>v = 3 m/s</b>.</li>
+                                </ol>
+                            </p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 3 (FUVEST)</strong><span class="nivel-tag nivel-dificil">DIFÍCIL</span></div>
+                            <p><b>Enunciado:</b> Um terremoto gera uma onda P (v=8 km/s) e uma S (v=5 km/s). Uma estação recebe a onda P e, 3 minutos depois, a onda S. A que distância ocorreu o epicentro?</p>
+                             <ol class="passo-a-passo">
+                                <li><b>Raciocínio:</b> A distância 'd' é a mesma. A diferença de tempo (Δt) é de 3 min = 180 s.</li>
+                                <li><b>Equações de tempo:</b> t<sub>P</sub> = d/8 e t<sub>S</sub> = d/5.</li>
+                                <li><b>Relacionar tempos:</b> t<sub>S</sub> - t<sub>P</sub> = 180 ➜ d/5 - d/8 = 180.</li>
+                                <li><b>Resolver para d:</b> (8d - 5d)/40 = 180 ➜ 3d/40 = 180 ➜ 3d = 7200 ➜ <b>d = 2400 km</b>.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CAIXINHA DE CONTEÚDO: FENÔMENOS ONDULATÓRIOS -->
+                <div id="ondulatoria-fenomenos-content" class="conteudo-detalhado" style="display: none;">
+                    <button class="btn-fechar">&times;</button>
+                    <h3>Caixinha de Estudo: Fenômenos Ondulatórios</h3>
+                    
+                    <div class="resumo-teorico">
+                        <h4>Explicação Teórica</h4>
+                        <p>Fenômenos ondulatórios são comportamentos típicos de ondas ao interagirem com o meio ou outras ondas.</p>
+                        <ul>
+                            <li><b>Reflexão:</b> A onda bate em uma superfície e volta para o mesmo meio (ex: eco, espelho).</li>
+                            <li><b>Refração:</b> A onda passa de um meio para outro, mudando sua velocidade e comprimento de onda, mas mantendo a frequência (ex: canudo "quebrado" na água).</li>
+                            <li><b>Difração:</b> A capacidade da onda de contornar obstáculos. É mais notável quando o obstáculo tem dimensões próximas ao comprimento de onda (ex: ouvir som de outra sala).</li>
+                            <li><b>Interferência:</b> O encontro de duas ou mais ondas, que podem se somar (construtiva) ou se anular (destrutiva).</li>
+                            <li><b>Polarização:</b> A filtragem de uma onda transversal para que ela vibre em apenas um plano (ex: óculos 3D, telas de LCD).</li>
+                        </ul>
+                    </div>
+                
+                    <div class="caixa-formula">
+                        <h4>Resumo Esquematizado</h4>
+                        <b>Reflexão:</b> &theta;<sub>incidência</sub> = &theta;<sub>reflexão</sub><br>
+                        <b>Refração:</b> f<sub>1</sub> = f<sub>2</sub> (frequência não muda!)<br>
+                        <b>Interferência Construtiva:</b> &Delta;d = n &middot; &lambda;<br>
+                        <b>Interferência Destrutiva:</b> &Delta;d = (n + 1/2) &middot; &lambda;
+                    </div>
+                
+                     <div class="aplicacoes-cotidiano">
+                        <h4>💡 Para que serve?</h4>
+                        <p>Para o funcionamento de fones com cancelamento de ruído (interferência), óculos de sol polarizados (polarização), lentes de óculos (refração) e para que o sinal de rádio chegue em locais sem "linha de visão" direta (difração).</p>
+                    </div>
+                
+                    <div class="exercicios-propostos">
+                        <h4>Exemplos Resolvidos</h4>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 1</strong><span class="nivel-tag nivel-facil">FÁCIL</span></div>
+                            <p><b>Enunciado:</b> Luz com f = 5x10¹⁴ Hz passa do ar (v≈3x10⁸ m/s) para a água (v=2,25x10⁸ m/s). Qual a nova frequência e o novo comprimento de onda?</p>
+                            <p><b>Solução:</b>
+                                <ol class="passo-a-passo">
+                                    <li><b>Frequência:</b> Na refração, a frequência não muda. <b>f<sub>água</sub> = 5x10¹⁴ Hz</b>.</li>
+                                    <li><b>Comprimento de Onda:</b> Na água, v = λ &middot; f ➜ λ = v/f = (2,25x10⁸) / (5x10¹⁴) = 0,45x10⁻⁶ ➜ <b>λ = 4,5x10⁻⁷ m</b>.</li>
+                                </ol>
+                            </p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 2 (ENEM)</strong><span class="nivel-tag nivel-medio">MÉDIO</span></div>
+                            <p><b>Enunciado:</b> Por que pessoas atrás de um prédio podem ouvir um carro de som do outro lado, mas não podem vê-lo?</p>
+                            <p><b>Solução:</b>
+                                <ol class="passo-a-passo">
+                                    <li><b>Fenômeno:</b> É a <b>difração</b>, a capacidade de contornar obstáculos.</li>
+                                    <li><b>Justificativa:</b> O som tem comprimento de onda (λ) grande (metros), comparável ao tamanho do prédio, difratando facilmente. A luz tem λ muito pequeno (nanômetros), por isso sua difração é desprezível e ela cria uma "sombra" nítida.</li>
+                                </ol>
+                            </p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 3</b><span class="nivel-tag nivel-dificil">DIFÍCIL</span></div>
+                            <p><b>Enunciado:</b> Duas fontes em fase emitem ondas com λ=2m. Um ponto P está a 20m de uma e 23m da outra. A interferência em P é construtiva ou destrutiva?</p>
+                             <ol class="passo-a-passo">
+                                <li><b>Calcular a diferença de caminho:</b> &Delta;d = d₂ - d₁ = 23 - 20 = 3 m.</li>
+                                <li><b>Comparar com λ:</b> A condição para interferência depende da razão &Delta;d/λ.
+                                <br>&Delta;d/λ = 3/2 = 1,5.
+                                </li>
+                                <li><b>Conclusão:</b> Como a razão é um número semi-inteiro (n + 1/2, com n=1), a interferência é <b>destrutiva</b>.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CAIXINHA DE CONTEÚDO: ACÚSTICA (NOVO) -->
+                <div id="acustica-content" class="conteudo-detalhado" style="display: none;">
+                    <button class="btn-fechar">&times;</button>
+                    <h3>Caixinha de Estudo: Acústica</h3>
+                    
+                    <div class="resumo-teorico">
+                        <h4>Explicação Teórica</h4>
+                        <p><b>Acústica</b> é o ramo da física que estuda o <b>som</b>. O som é uma onda mecânica e longitudinal. Nossos ouvidos percebem três qualidades principais:</p>
+                        <ul>
+                            <li><b>Altura:</b> Relacionada à <b>frequência</b>. Distingue sons graves (baixa f) de agudos (alta f).</li>
+                            <li><b>Intensidade:</b> Relacionada à <b>amplitude</b>. Distingue sons fracos (baixa A) de fortes (alta A). Medida em decibéis (dB).</li>
+                            <li><b>Timbre:</b> Relacionado ao <b>formato da onda</b>. Permite diferenciar a mesma nota tocada por instrumentos diferentes.</li>
+                        </ul>
+                        <p>O <b>Efeito Doppler</b> é a variação da frequência percebida devido ao movimento relativo entre a fonte sonora e o observador (ex: som da ambulância mudando ao passar por você).</p>
+                    </div>
+                
+                    <div class="caixa-formula">
+                        <h4>Resumo Esquematizado</h4>
+                        <b>Altura</b> &harr; Frequência (Hz)<br>
+                        <b>Intensidade</b> &harr; Amplitude (dB)<br>
+                        <b>Timbre</b> &harr; Formato da Onda (Harmônicos)
+                    </div>
+                
+                     <div class="aplicacoes-cotidiano">
+                        <h4>💡 Para que serve?</h4>
+                        <p>Para a afinação de instrumentos musicais, o funcionamento de radares de velocidade (Efeito Doppler), exames de ultrassom que medem o fluxo sanguíneo e para a engenharia de isolamento acústico.</p>
+                    </div>
+                
+                    <div class="exercicios-propostos">
+                        <h4>Exemplos Resolvidos</h4>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 1</strong><span class="nivel-tag nivel-facil">FÁCIL</span></div>
+                            <p><b>Enunciado:</b> Ao mudar o seletor de uma estação de rádio de 99,5 MHz para 102,1 MHz, o que o ouvinte está alterando na onda eletromagnética que ele sintoniza?</p>
+                            <p><b>Solução:</b> A unidade MHz (megahertz) é uma medida de <b>frequência</b>. Portanto, o ouvinte está sintonizando uma onda de maior frequência. No caso do som que sai do rádio, uma frequência maior corresponderia a um som mais <b>agudo</b> (maior altura).</p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 2 (ENEM)</strong><span class="nivel-tag nivel-medio">MÉDIO</span></div>
+                            <p><b>Enunciado:</b> O sonar de um navio emite pulsos de ultrassom na água (v=1500 m/s) para medir a profundidade. O eco de um pulso é detectado 4 segundos após sua emissão. Qual é a profundidade do oceano naquele local?</p>
+                            <p><b>Solução:</b>
+                                <ol class="passo-a-passo">
+                                    <li><b>Lógica:</b> O tempo de 4 segundos é o tempo total de ida e volta do som. O tempo para apenas descer (ou seja, para percorrer a profundidade 'P') é metade disso: t = 2 s.</li>
+                                    <li><b>Fórmula:</b> Usamos a equação de velocidade constante: v = d/t ➜ P = v &middot; t.</li>
+                                    <li><b>Cálculo:</b> P = 1500 m/s &middot; 2 s ➜ <b>P = 3000 metros</b>.</li>
+                                </ol>
+                            </p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 3</b><span class="nivel-tag nivel-dificil">DIFÍCIL</span></div>
+                            <p><b>Enunciado:</b> Uma ambulância com a sirene ligada a 800 Hz se aproxima de um observador parado a uma velocidade de 34 m/s. Qual a frequência aparente ouvida pelo observador? (Dado: velocidade do som no ar ≈ 340 m/s).</p>
+                             <ol class="passo-a-passo">
+                                <li><b>Fórmula do Efeito Doppler (Aproximação):</b> f<sub>aparente</sub> = f<sub>fonte</sub> &middot; ( v<sub>som</sub> / (v<sub>som</sub> - v<sub>fonte</sub>) )</li>
+                                <li><b>Lógica:</b> Como a fonte se aproxima, o som deve ficar mais agudo, então a frequência aparente deve ser maior que 800 Hz. O sinal no denominador deve ser negativo para diminuir o divisor e aumentar o resultado final.</li>
+                                <li><b>Substituir e Calcular:</b>
+                                <br>f<sub>aparente</sub> = 800 &middot; ( 340 / (340 - 34) )
+                                <br>f<sub>aparente</sub> = 800 &middot; ( 340 / 306 )
+                                <br>f<sub>aparente</sub> ≈ 800 &middot; 1,11 ➜ <b>f<sub>aparente</sub> ≈ 888,8 Hz</b>.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOCÃO 4: ÓPTICA -->
+                <h2 class="grande-area-titulo">Óptica</h2>
+                 <div class="sub-topicos-grid">
+                    <div class="sub-topico-card" data-topic="optica-geometrica">
+                        <h4>Óptica Geométrica</h4>
+                        <ul>
+                            <li>Princípios da Luz</li>
+                            <li>Reflexão (Espelhos Planos)</li>
+                            <li>Reflexão (Espelhos Esféricos)</li>
+                        </ul>
+                    </div>
+                    <div class="sub-topico-card" data-topic="optica-refracao">
+                        <h4>Refração da Luz</h4>
+                        <ul>
+                            <li>Leis da Refração (Snell)</li>
+                            <li>Lentes Esféricas delgadas</li>
+                            <li>Óptica da Visão</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CAIXINHA DE CONTEÚDO: ÓPTICA GEOMÉTRICA (NOVO) -->
+                <div id="optica-geometrica-content" class="conteudo-detalhado" style="display: none;">
+                    <button class="btn-fechar">&times;</button>
+                    <h3>Caixinha de Estudo: Óptica Geométrica</h3>
+                    
+                    <div class="resumo-teorico">
+                        <h4>Explicação Teórica</h4>
+                        <p>A <b>Óptica Geométrica</b> estuda a luz como raios que se propagam em linha reta, seguindo três princípios: Propagação Retilínea, Independência e Reversibilidade.</p>
+                        <p><b>Espelhos Planos</b> formam imagens virtuais, direitas, de mesmo tamanho e simétricas.</p>
+                        <p><b>Espelhos Esféricos Côncavos</b> convergem a luz e podem formar imagens reais ou virtuais. <b>Espelhos Convexos</b> divergem a luz e formam sempre imagens virtuais, direitas e menores.</p>
+                    </div>
+                
+                    <div class="caixa-formula">
+                        <h4>Resumo Esquematizado</h4>
+                        <b>Equação de Gauss:</b> 1/f = 1/p + 1/p'<br>
+                        <b>Aumento Linear:</b> A = i/o = -p'/p
+                    </div>
+                
+                     <div class="aplicacoes-cotidiano">
+                        <h4>💡 Para que serve?</h4>
+                        <p>Para o funcionamento de espelhos de maquiagem (côncavo), retrovisores de carro (convexo), telescópios refletores (côncavo) e espelhos de segurança de lojas (convexo).</p>
+                    </div>
+                
+                    <div class="exercicios-propostos">
+                        <h4>Exemplos Resolvidos</h4>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 1</strong><span class="nivel-tag nivel-facil">FÁCIL</span></div>
+                            <p><b>Enunciado:</b> Uma pessoa de 1,80 m está a 2 m de um espelho plano. Qual a altura da imagem e a distância entre a pessoa e a imagem?</p>
+                            <p><b>Solução:</b>
+                                <ol class="passo-a-passo">
+                                    <li><b>Altura:</b> Em espelho plano, a imagem tem o mesmo tamanho do objeto: <b>1,80 m</b>.</li>
+                                    <li><b>Distância:</b> A imagem fica a 2 m do espelho. A distância total entre a pessoa e a imagem é p + p' = 2 + 2 = <b>4 m</b>.</li>
+                                </ol>
+                            </p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 2 (ENEM)</strong><span class="nivel-tag nivel-medio">MÉDIO</span></div>
+                            <p><b>Enunciado:</b> Por que os espelhos retrovisores direitos dos carros (convexos) têm a inscrição "objetos no espelho estão mais perto do que parecem"?</p>
+                            <p><b>Solução:</b> O espelho convexo forma uma imagem <b>menor</b> que o objeto. Nosso cérebro associa o tamanho menor a uma distância maior. A advertência corrige essa falsa percepção, alertando que o carro está, na realidade, mais próximo.</p>
+                        </div>
+                        <div class="exercicio">
+                            <div class="exercicio-header"><strong>Exemplo 3 (FUVEST)</strong><span class="nivel-tag nivel-dificil">DIFÍCIL</span></div>
+                            <p><b>Enunciado:</b> Um objeto de 10 cm de altura é colocado a 30 cm de um espelho côncavo com f = 20 cm. Determine a posição, altura e natureza da imagem.</p>
+                             <ol class="passo-a-passo">
+                                <li><b>Posição (p'):</b> 1/f = 1/p + 1/p' ➜ 1/20 = 1/30 + 1/p' ➜ 1/p' = 1/20 - 1/30 = (3-2)/60 ➜ <b>p' = +60 cm</b>.</li>
+                                <li><b>Altura (i):</b> i/o = -p'/p ➜ i/10 = -60/30 ➜ i/10 = -2 ➜ <b>i = -20 cm</b>.</li>
+                                <li><b>Natureza:</b> Como p' é positivo, a imagem é <b>Real</b>. Como i é negativo, é <b>Invertida</b>. Como |i| > |o|, é <b>Maior</b>.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+<!-- CAIXINHA DE CONTEÚDO: REFRAÇÃO DA LUZ (NOVO) -->
+    <div id="optica-refracao-content" class="conteudo-detalhado" style="display: none;">
+        <button class="btn-fechar">&times;</button>
+        <h3>Caixinha de Estudo: Refração da Luz</h3>
+        
+        <div class="resumo-teorico">
+            <h4>Explicação Teórica</h4>
+            <p>A <b>Refração</b> é a passagem da luz de um meio para outro, o que causa uma mudança em sua <b>velocidade</b> e, consequentemente, um desvio em sua trajetória. A <b>frequência</b> da luz nunca muda na refração.</p>
+            <p>A <b>Lei de Snell</b> (n₁ &middot; sen(θ₁) = n₂ &middot; sen(θ₂)) descreve matematicamente esse desvio. <b>Lentes esféricas</b> usam a refração para convergir ou divergir a luz, sendo essenciais para corrigir defeitos de visão como a <b>miopia</b> (corrigida com lente divergente) e a <b>hipermetropia</b> (corrigida com lente convergente).</p>
+        </div>
+    
+        <div class="caixa-formula">
+            <h4>Resumo Esquematizado</h4>
+            <b>Índice de Refração:</b> n = c/v <br>
+            <b>Lei de Snell:</b> n₁ &middot; sen(θ₁) = n₂ &middot; sen(θ₂)<br>
+            <b>Equação de Gauss (Lentes):</b> 1/f = 1/p + 1/p' <br>
+            (f > 0 para convergente, f < 0 para divergente)
+        </div>
+    
+         <div class="aplicacoes-cotidiano">
+            <h4>💡 Para que serve?</h4>
+            <p>Para o funcionamento de óculos, lentes de contato, câmeras fotográficas, microscópios, telescópios e para a tecnologia de fibra óptica, que revolucionou as telecomunicações.</p>
+        </div>
+    
+        <div class="exercicios-propostos">
+            <h4>Exemplos Resolvidos</h4>
+            <div class="exercicio">
+                <div class="exercicio-header"><strong>Exemplo 1</strong><span class="nivel-tag nivel-facil">FÁCIL</span></div>
+                <p><b>Enunciado:</b> Uma piscina com 2m de profundidade real (P<sub>real</sub>) é vista de fora. Qual a profundidade aparente (P<sub>ap</sub>)? (Dados: n<sub>ar</sub>=1, n<sub>água</sub>=4/3).</p>
+                <p><b>Solução:</b> Usamos a relação P<sub>ap</sub> / P<sub>real</sub> = n<sub>observador</sub> / n<sub>objeto</sub>.
+                <br>P<sub>ap</sub> / 2 = 1 / (4/3) ➜ P<sub>ap</sub> / 2 = 3/4 ➜ P<sub>ap</sub> = 6/4 = <b>1,5 m</b>.</p>
+            </div>
+            <div class="exercicio">
+                <div class="exercicio-header"><strong>Exemplo 2 (ENEM)</strong><span class="nivel-tag nivel-medio">MÉDIO</span></div>
+                <p><b>Enunciado:</b> Um estudante com miopia não enxerga bem a lousa. Qual tipo de lente ele deve usar e por quê?</p>
+                <p><b>Solução:</b> O míope tem dificuldade de ver de longe porque a imagem se forma <b>antes</b> da retina. Ele precisa de uma <b>lente divergente</b> para "espalhar" os raios de luz, fazendo a imagem se formar mais para trás, exatamente sobre a retina.</p>
+            </div>
+            <div class="exercicio">
+                <div class="exercicio-header"><strong>Exemplo 3 (VUNESP)</strong><span class="nivel-tag nivel-dificil">DIFÍCIL</span></div>
+                <p><b>Enunciado:</b> Uma lente convergente (f=10cm) projeta uma imagem 4 vezes maior que o objeto. A que distância da lente o objeto deve estar?</p>
+                 <ol class="passo-a-passo">
+                    <li><b>Dados:</b> f=+10cm. Imagem projetada e maior é real e invertida, logo A=-4.</li>
+                    <li><b>Relação p' e p:</b> A = -p'/p ➜ -4 = -p'/p ➜ p' = 4p.</li>
+                    <li><b>Equação de Gauss:</b> 1/f = 1/p + 1/p' ➜ 1/10 = 1/p + 1/(4p).</li>
+                    <li><b>Resolver:</b> 1/10 = (4+1)/4p = 5/4p ➜ 4p = 50 ➜ <b>p = 12,5 cm</b>.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+               <!-- BLOCÃO 5: ELETROMAGNETISMO -->
+               <h2 class="grande-area-titulo">Eletromagnetismo</h2>
+               <div class="sub-topicos-grid">
+                  <div class="sub-topico-card" data-topic="eletrostatica">
+                      <h4>Eletrostática</h4>
+                      <ul>
+                          <li>Carga e Força Elétrica</li>
+                          <li>Campo e Potencial Elétrico</li>
+                          <li>Capacitores</li>
+                      </ul>
+                      
+                  </div>
+                  <div class="sub-topico-card" data-topic="eletrodinamica">
+                      <h4>Eletrodinâmica</h4>
+                      <ul>
+                          <li>Corrente e Resistência</li>
+                          <li>Leis de Ohm e Circuitos</li>
+                          <li>Potência e Energia Elétrica</li>
+                      </ul>
+                  </div>
+                  <div class="sub-topico-card" data-topic="magnetismo">
+                      <h4>Magnetismo</h4>
+                      <ul>
+                          <li>Campo e Força Magnética</li>
+                          <li>Indução Eletromagnética</li>
+                          <li>Ondas Eletromagnéticas</li>
+                      </ul>
+                  </div>
+              </div>
+
+              <!-- BLOCÃO 6: FÍSICA MODERNA -->
+              <h2 class="grande-area-titulo">Física Moderna</h2>
+              <div class="sub-topicos-grid">
+                 <div class="sub-topico-card" data-topic="relatividade">
+                     <h4>Relatividade Especial</h4>
+                     <ul>
+                         <li>Postulados de Einstein</li>
+                         <li>Dilatação do Tempo</li>
+                         <li>Contração do Espaço</li>
+                     </ul>
+                 </div>
+                 <div class="sub-topico-card" data-topic="quantica">
+                     <h4>Física Quântica e Nuclear</h4>
+                     <ul>
+                         <li>Efeito Fotoelétrico</li>
+                         <li>Dualidade Onda-Partícula</li>
+                         <li>Radioatividade</li>
+                     </ul>
+                 </div>
+             </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 RevisaPRO. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Seus scripts JS que controlam a interatividade -->
+    <script src="script-detalhes.js"></script>
+
+</body>
+
+</html>\`\`\`
