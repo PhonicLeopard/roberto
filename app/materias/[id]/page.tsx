@@ -322,13 +322,12 @@ const conteudosEnem2025 = {
       "Os Mesopotâmicos",
       "Os Hebreus",
       "Introdução ao Mundo Grego",
-      "Pré-Socrático",
+      "Pré-Socráticos",
       "Sofistas",
       "Socráticos - Sócrates",
       "Socráticos - Platão",
       "Socráticos - Aristóteles",
     ],
-    transicaoIdadeMedia: ["Filosofia Helenística"],
     filosofiaMedieval: ["Pensamento Cristão"],
     filosofiaModernaContemporanea: ["Ciência Moderna", "Ética e Moral", "Verdade"],
   },
@@ -603,6 +602,25 @@ export default function MateriaPage({ params }: { params: { id: string } }) {
                   Voltar para matérias
                 </Button>
               </Link>
+            </div>
+          </main>
+        </div>
+      </div>
+    )
+  }
+
+  if (subject.slug === "historia" || subject.slug === "filosofia") {
+    if (typeof window !== "undefined") {
+      window.location.href = `/materias/${subject.slug}`
+    }
+    return (
+      <div className="min-h-screen bg-background">
+        <Navbar />
+        <div className="flex">
+          <Sidebar />
+          <main className="flex-1 p-6 ml-64">
+            <div className="text-center">
+              <p>Redirecionando...</p>
             </div>
           </main>
         </div>

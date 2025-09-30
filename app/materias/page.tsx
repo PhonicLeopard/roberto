@@ -10,20 +10,20 @@ import Link from "next/link"
 
 export default function MateriasPage() {
   const subjects = [
-    { id: 1, name: "Matemática", progress: 75, hours: 28, color: "bg-blue-500" },
-    { id: 2, name: "História", progress: 60, hours: 22, color: "bg-green-500" },
-    { id: 3, name: "Física", progress: 45, hours: 18, color: "bg-purple-500" },
-    { id: 4, name: "Química", progress: 30, hours: 12, color: "bg-orange-500" },
-    { id: 5, name: "Literatura", progress: 90, hours: 15, color: "bg-pink-500" },
-    { id: 6, name: "Geografia", progress: 55, hours: 20, color: "bg-teal-500" },
-    { id: 7, name: "Inglês", progress: 70, hours: 25, color: "bg-indigo-500" },
-    { id: 8, name: "Biologia", progress: 45, hours: 16, color: "bg-emerald-500" },
-    { id: 9, name: "Artes", progress: 80, hours: 10, color: "bg-rose-500" },
-    { id: 10, name: "Redação", progress: 65, hours: 14, color: "bg-amber-500" },
-    { id: 11, name: "Sociologia", progress: 50, hours: 8, color: "bg-violet-500" },
-    { id: 12, name: "Espanhol", progress: 35, hours: 12, color: "bg-cyan-500" },
-    { id: 13, name: "Filosofia", progress: 60, hours: 18, color: "bg-slate-500" },
-    { id: 14, name: "Educação Física", progress: 95, hours: 6, color: "bg-lime-500" },
+    { id: 1, name: "Matemática", progress: 75, hours: 28, color: "bg-blue-500", slug: "matematica" },
+    { id: 2, name: "História", progress: 60, hours: 22, color: "bg-green-500", slug: "historia" },
+    { id: 3, name: "Física", progress: 45, hours: 18, color: "bg-purple-500", slug: "fisica" },
+    { id: 4, name: "Química", progress: 30, hours: 12, color: "bg-orange-500", slug: "quimica" },
+    { id: 5, name: "Literatura", progress: 90, hours: 15, color: "bg-pink-500", slug: "literatura" },
+    { id: 6, name: "Geografia", progress: 55, hours: 20, color: "bg-teal-500", slug: "geografia" },
+    { id: 7, name: "Inglês", progress: 70, hours: 25, color: "bg-indigo-500", slug: "ingles" },
+    { id: 8, name: "Biologia", progress: 45, hours: 16, color: "bg-emerald-500", slug: "biologia" },
+    { id: 9, name: "Artes", progress: 80, hours: 10, color: "bg-rose-500", slug: "artes" },
+    { id: 10, name: "Redação", progress: 65, hours: 14, color: "bg-amber-500", slug: "redacao" },
+    { id: 11, name: "Sociologia", progress: 50, hours: 8, color: "bg-violet-500", slug: "sociologia" },
+    { id: 12, name: "Espanhol", progress: 35, hours: 12, color: "bg-cyan-500", slug: "espanhol" },
+    { id: 13, name: "Filosofia", progress: 60, hours: 18, color: "bg-slate-500", slug: "filosofia" },
+    { id: 14, name: "Educação Física", progress: 95, hours: 6, color: "bg-lime-500", slug: "educacao-fisica" },
   ]
 
   return (
@@ -79,7 +79,7 @@ export default function MateriasPage() {
                               <p className="text-sm font-medium">{subject.progress}%</p>
                               <Progress value={subject.progress} className="w-20 h-2" />
                             </div>
-                            <Link href={`/materias/${subject.id}`}>
+                            <Link href={`/materias/${subject.slug}`}>
                               <Button variant="outline" size="sm">
                                 Ver conteúdo
                               </Button>
